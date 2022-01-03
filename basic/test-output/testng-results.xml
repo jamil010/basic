@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-01-02T16:46:02 EST" name="Suite" finished-at="2022-01-02T16:46:33 EST" duration-ms="31421">
+    <groups>
+    </groups>
+    <test started-at="2022-01-02T16:46:02 EST" name="Test" finished-at="2022-01-02T16:46:10 EST" duration-ms="8190">
+      <class name="Demo.demo1">
+        <test-method is-config="true" signature="Browsers(java.lang.String,java.lang.String)[pri:0, instance:Demo.demo1@73ee04c8]" started-at="2022-01-02T16:46:02 EST" name="Browsers" finished-at="2022-01-02T16:46:06 EST" duration-ms="3924" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.amazon.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Browsers -->
+        <test-method signature="pub()[pri:0, instance:Demo.demo1@73ee04c8]" started-at="2022-01-02T16:46:06 EST" name="pub" finished-at="2022-01-02T16:46:06 EST" duration-ms="460" status="FAIL">
+          <exception class="java.net.MalformedURLException">
+            <full-stacktrace>
+              <![CDATA[java.net.MalformedURLException
+at java.base/java.net.URL.<init>(URL.java:679)
+at java.base/java.net.URL.<init>(URL.java:541)
+at java.base/java.net.URL.<init>(URL.java:488)
+at Demo.demo1.pub(demo1.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException
+at java.base/java.net.URL.<init>(URL.java:585)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.net.MalformedURLException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pub -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Demo.demo1@73ee04c8]" started-at="2022-01-02T16:46:06 EST" name="tearDown" finished-at="2022-01-02T16:46:10 EST" duration-ms="3758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Demo.demo1 -->
+    </test> <!-- Test -->
+    <test started-at="2022-01-02T16:46:10 EST" name="Test1" finished-at="2022-01-02T16:46:33 EST" duration-ms="23172">
+      <class name="Demo.demo1">
+        <test-method is-config="true" signature="Browsers(java.lang.String,java.lang.String)[pri:0, instance:Demo.demo1@16a0ee18]" started-at="2022-01-02T16:46:10 EST" name="Browsers" finished-at="2022-01-02T16:46:12 EST" duration-ms="2251" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.facebook.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Browsers -->
+        <test-method signature="pub()[pri:0, instance:Demo.demo1@16a0ee18]" started-at="2022-01-02T16:46:12 EST" name="pub" finished-at="2022-01-02T16:46:29 EST" duration-ms="16882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pub -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Demo.demo1@16a0ee18]" started-at="2022-01-02T16:46:29 EST" name="tearDown" finished-at="2022-01-02T16:46:33 EST" duration-ms="4037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Demo.demo1 -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
+</testng-results>
